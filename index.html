@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5421c5e40e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo-1.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <li><a href="#contacts">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Frontend developer</p>
+                <h1>Hi, I'm <span>Ozavize</span><br> Akande from Nigeria</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div id="about">
+            <div class="row">
+                <div class="col-1">
+                    <img src="images/gradi.jpg">
+                </div>
+                <div class="col-2">
+                    <h1 class="sub-titles">About Me</h1>
+                    <p>Hi there!<br> 
+                        I am a beginner front end developer skilled in HTML5, CSS, responsive web dsign, JavaScript. I replicate designs on the internet and on figma with these programming tools.
+                        I am also a skilled content writer and a digital marketer  </p>
+                    <div class="tab-titles">
+                        <div class="tab-links active-class" onclick="opentab('skills')">Skills</div>
+                        <div class="tab-links"  onclick="opentab('education')">Education</div>
+                        <div class="tab-links"  onclick="opentab('experience')">Experience</div>
+                        
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Front end developer</span><br> design web pages</li>
+                            <li><span>Content writer</span><br>Write copies and articles</li>
+                            <li><span>Digital marketer</span><br>market digital products and give businesses online presence</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2015-2019</span><br>B.a Uniben, Nigeria</li>
+                            <li><span>2022</span><br>intern at she-codes, Africa</li>
+                            <li><span>2022</span><br>intern at Web3 ladies</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022-current</span><br> intern at she-codes Africa</li>
+                            <li><span>2022-current</span><br> intern at web3ladies</li>
+                            <li><span>2020-current</span><br> Content writing</li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!--services-->
+    <div id="services">
+            <h1 class="sub-titles">My Services</h1>
+            <div class="services-lists">
+                <div> 
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p> Build Front end Web pages using html, css, js and tailwind css</p>
+                    <a href="https://app.netlify.com/teams/beautifulozav/sites">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-pen"></i>
+                    <h2>Content writing</h2>
+                    <p> Write copies, stories and articles</p>
+                    <a href="https://drive.google.com/drive/folders/1-LHNhHoFSDznhAmW1-Pn_NJYKBa09cpL?usp=sharing">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-bullhorn"></i>
+                    <h2>Digital Marketing</h2>
+                    <p> give business online presence with social media platforms, sell digital products</p>
+                    <a href="">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--portfolio-->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-titles"> My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.jpg">
+                    <div class="layer">
+                        <h3>psd responsive design</h3>
+                        <P>This is a responsive webpage built with html and CSS</P>
+                        <a target="_blank" href="https://wonderful-biscotti-d927f8.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.jpg">
+                    <div class="layer">
+                        <h3> Ninja Food design</h3>
+                        <P>This is a responsive webpage built with html and tailwindCSS</P>
+                        <a href="https://unique-cat-d2d5e0.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.jpg">
+                    <div class="layer">
+                        <h3>Easy wire accounting web design</h3>
+                        <P>This is a responsive design built by following the figma design</P>
+                        <a href="https://delightful-bienenstitch-2f089d.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- <a href="https://app.netlify.com/teams/beautifulozav/sites" class="btn">see more</a> -->
+        </div>
+    </div>
+    <!--contact-->
+    <div id="contacts">
+        <div class="container">
+            <div class="row">
+                <div class="left-child">
+                    <h1 class="sub-titles">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>akandeozavize@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>08103005115</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/akande.ozavize"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/mizakandejoy/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/AkandeOzavize?s=09"><i class="fab fa-twitter-square"></i></a>
+                        <a href="https://www.linkedin.com/in/ozavize-akande-53504020b"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/AKANDE OZAVIZE cv.docx" download class="btn btn">Download CV</a>
+                </div>
+                <div class="right-child">
+                    <form name="submit-to-google-sheet">
+                        <input type="text"  name="Name" placeholder="Your name" required>
+                        <input type="text"  name="Email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright &copy;Akande Ozavize. Made with easy tutorial</p>
+    </div>
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-class");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-class");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+    </script> 
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right ="0";
+        }
+        function closemenu(){
+            sidemenu.style.right ="-200px";
+        }
+    </script> 
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzYkyD-w2Sc97Epo7_5_bbWlI9bqzTmRrspK1ubyIzeHwzmkjPeF0UO_z9fjsRx8I4C/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+               setTimeout(function(){
+                msg.innerHTMl = ""
+               },5000)
+               form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
