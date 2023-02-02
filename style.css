@@ -15,7 +15,7 @@ body{
     background-image: url(images/mbg2.jpeg);
     background-position: center;
     background-size:cover;
-    width:100%;
+    width:90%;
     height: 100vh;
 }
 .container{
@@ -46,7 +46,7 @@ nav ul li a::after{
     position:absolute;
     width:0%;
     height:3px;
-    background: #ff004f;
+    background:  #009ADC;
     left:0;
     bottom:-6px;
     transition: 0.5s;
@@ -64,7 +64,7 @@ nav ul li a:hover::after{
     font-size: 60px;
 }
 .header-text h1 span{
-    color:#ff004f;
+    color: #009ADC;
 }
 #about{
     padding:80px 0;
@@ -105,7 +105,7 @@ nav ul li a:hover::after{
 .tab-links::after{
     content: '';
     width:0;
-    background:#ff004f;
+    background: #009ADC;
     height:4px;
     left:0;
     bottom:-8px;
@@ -120,7 +120,7 @@ nav ul li a:hover::after{
     margin:10px 0;
 }
 .tab-contents ul li span{
-    color:#b54769;
+    color: hsl(198, 100%, 43%);
     font-size: 14px;
 }
 .tab-contents{
@@ -131,6 +131,9 @@ nav ul li a:hover::after{
 }
 #services{
     padding: 30px 0;
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .services-lists{
     display:grid;
@@ -163,7 +166,7 @@ nav ul li a:hover::after{
     display: inline-block;
 }
 .services-lists div:hover{
-    background: #ff004f;
+    background:  #009ADC;
     transform: translateY(-10px);
 }
 #portfolio{
@@ -190,7 +193,7 @@ nav ul li a:hover::after{
  .layer{
     width:100%;
     position: absolute;
-    background:linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    background:linear-gradient(rgba(0,0,0,0.6),  #009ADC);
     height:0;
     left:0;
     bottom:0;
@@ -211,7 +214,7 @@ nav ul li a:hover::after{
 }
 .layer a{
     text-decoration: none;
-    color: #ff004f;
+    color:  #009ADC;
     width:60px;
     height:60px;
     border-radius:50%;
@@ -233,13 +236,13 @@ nav ul li a:hover::after{
     border-radius:6px;
     padding:14px 50px;
     color:#fff;
-    border:1px solid#ff004f;
+    border:1px solid #009ADC;
     width:fit-content;
     transition: background 0.5s;
     text-decoration:none;
 }
 .btn:hover{
- background: #ff004f;
+ background:  #009ADC;
 }
 #contacts{
     padding:50px;
@@ -254,7 +257,7 @@ nav ul li a:hover::after{
     margin-top: 30px;
 }
 .left-child p i{
-    color: #ff004f;
+    color:  #009ADC;
     font-size: 25px;
     margin-right: 15px;
 }
@@ -271,12 +274,12 @@ nav ul li a:hover::after{
 
 }
 .social-icons a:hover{
-    color: #ff004f;
+    color:  #009ADC;
     transform: translateY(-5px);
 }
 .btn.btn2{
     display:inline-block;
-    background: #ff004f;
+    background:  #009ADC;
 }
 .right-child form{
     width: 100%;
@@ -312,7 +315,7 @@ form .btn2{
     font-weight: 300;
 }
 .copyright i{
-    color:#ff004f ;
+    color: #009ADC ;
 }       
 nav .fas{
     display:none;
@@ -320,6 +323,7 @@ nav .fas{
 @media only screen and (max-width:600px){
     #header{
         background-image: url(images/pbg.jpg) ;
+        width:100%;
     }
     .header-text{
         margin-top: 100%;
@@ -333,7 +337,7 @@ nav .fas{
         font-size:25px;
     }
     nav ul{
-        background: #ff004f;
+        background:  #009ADC;
         position:fixed;
         top:0;
         right:-200px;
@@ -370,6 +374,9 @@ nav .fas{
     }
     .left-child, .right-child{
         flex-basis:100%
+    }
+    #contacts{
+        padding:20px;
     }
     .copyright{
         font-size: 14px;
